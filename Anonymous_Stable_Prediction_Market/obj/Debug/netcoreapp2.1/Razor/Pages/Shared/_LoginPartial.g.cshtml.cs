@@ -81,12 +81,12 @@ using ChoresAndFulfillment.Data;
             WriteLiteral("    ");
             EndContext();
             BeginContext(169, 666, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e37f8e312c594c338635f01445f11bc0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039ccfa5d17340939455a0a3a75f903c", async() => {
                 BeginContext(334, 214, true);
                 WriteLiteral("\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <li>\r\n                <a href=\"/AccountActionPage/Index\" title=\"Investments\">Manage Jobs</a>\r\n            </li>   \r\n            <li>\r\n                ");
                 EndContext();
                 BeginContext(548, 90, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8ca0159782d4d9fb50f9ddca643e0f7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a35faec1a30644f580f45684c3b089d9", async() => {
                     BeginContext(619, 15, true);
                     WriteLiteral("Account Options");
                     EndContext();
@@ -159,7 +159,7 @@ else
             WriteLiteral("    <ul class=\"nav navbar-nav navbar-right\">\r\n        <li>");
             EndContext();
             BeginContext(907, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6308a48f62bf4cb89428ad7ea9cb832a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "282941625bd24d7785cfdc830ab85493", async() => {
                 BeginContext(959, 8, true);
                 WriteLiteral("Register");
                 EndContext();
@@ -183,7 +183,7 @@ else
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(990, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "227b21da6dfd4a289cc127b96da583e4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24a2d3a5f8c341d3afcf7698136f9715", async() => {
                 BeginContext(1039, 5, true);
                 WriteLiteral("Login");
                 EndContext();

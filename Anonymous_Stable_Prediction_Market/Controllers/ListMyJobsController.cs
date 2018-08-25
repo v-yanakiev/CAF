@@ -34,16 +34,16 @@ namespace ChoresAndFulfillment.Controllers
                 _applicationDbContext.
                 WorkerAccounts.Where(a => a.Id == user.WorkerAccountId).
                 Include(a => a.Jobs).First();
-            if (!workerAccount.Jobs.Any(a=>a.JobState==JobState.Finished))
+            if (!workerAccount.Jobs.Any(a=>a.JobState==JobState.Active))
             {
-                ViewData["Jobs"] = "<h2>You have no finished jobs!</h2>";
+                ViewData["Jobs"] = "<h2>You have no active jobs!</h2>";
                 return View();
             }
             StringBuilder stringBuilder = new StringBuilder();
             foreach (var job in workerAccount.Jobs.Where(a => a.JobState == JobState.Active))
             {
                 stringBuilder.AppendLine("<li>");
-                stringBuilder.AppendLine("<a href=\"/WorkerFinishedJob/Index/" + job.Id + "\">" + job.Name + "</a>");
+                stringBuilder.AppendLine("<a href=\"/WorkerActiveJob/Index/" + job.Id + "\">" + job.Name + "</a>");
                 stringBuilder.AppendLine("</li>");
             }
             ViewData["Jobs"] = stringBuilder.ToString();

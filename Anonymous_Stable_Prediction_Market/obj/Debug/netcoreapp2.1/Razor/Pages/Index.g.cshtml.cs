@@ -79,7 +79,7 @@ using ChoresAndFulfillment.Data;
             <strong>");
             EndContext();
             BeginContext(628, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92046e776ecd4c8a9cf8528f03b3e430", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b716385ec8904276ba953ccd7cc361bc", async() => {
                 BeginContext(680, 12, true);
                 WriteLiteral("sign up here");
                 EndContext();

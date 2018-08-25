@@ -26,12 +26,17 @@ namespace ChoresAndFulfillment.Controllers
         public IActionResult Index()
         {
             bool isEmployer = false;
+            bool isWorker = false;
+            User currentUser = null;
             if (User.Identity.IsAuthenticated)
             {
-                User currentUser = userManager.GetUserAsync(HttpContext.User).Result;
+                currentUser = userManager.GetUserAsync(HttpContext.User).Result;
                 if (currentUser.EmployerAccountId != null)
                 {
                     isEmployer = true;
+                }else if (currentUser.WorkerAccountId != null)
+                {
+                    isWorker = true;
                 }
             }
             if (!applicationDbContext.Jobs.Any(a=>a.JobState==JobState.Active))
@@ -76,7 +81,24 @@ namespace ChoresAndFulfillment.Controllers
 
                     if (!isEmployer)
                     {
-                        stringBuilder.AppendLine($"<td><a href=\"/ApplyForJob/Apply/{job.Id}\">Apply For Job</a></td>");
+                        if (isWorker)
+                        {
+                            WorkerAccount workerAccount = applicationDbContext.WorkerAccounts.
+                                Where(a => a.Id == currentUser.WorkerAccountId).
+                                Include(a => a.ActiveApplications).First();
+                            if (workerAccount.ActiveApplications.Any(a => a.JobId == job.Id))
+                            {
+                                stringBuilder.AppendLine($"<td>Already applied.</td>");
+                            }
+                            else
+                            {
+                                stringBuilder.AppendLine($"<td><a href=\"/ApplyForJob/Apply/{job.Id}\">Apply For Job</a></td>");
+                            }
+                        }
+                        else
+                        {
+                            stringBuilder.AppendLine($"<td><a href=\"/ApplyForJob/Apply/{job.Id}\">Apply For Job</a></td>");
+                        }
                     }
                     stringBuilder.AppendLine("</tr>");
                 }
