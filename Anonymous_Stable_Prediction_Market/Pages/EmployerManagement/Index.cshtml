@@ -1,0 +1,16 @@
+﻿@page
+@model ChoresAndFulfillment.Pages.EmployerManagement.IndexModel
+@{
+    ViewData["Title"] = "Employer view";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h3>Hello, @HttpContext.User.Identity.Name. Here is what you can do from here:</h3>
+<ul>
+    <li>
+        <a href="/CreateJob/Index">Publish a new job</a>
+    </li>
+    <li>
+        <a href="/YourActiveJobs/Index">Look through all your active jobs</a>
+    </li>
+</ul>
+

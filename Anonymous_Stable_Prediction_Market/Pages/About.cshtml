@@ -1,0 +1,63 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<script>
+    function myFunction(elementId) {
+        var x = document.getElementById(elementId);
+        if (x.style.display != "block") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<h2>@ViewData["Title"]</h2>
+<a class="toClickOn" href="#">
+    <h3 onclick="myFunction('first')">What is CAF?</h3>
+</a>
+<p id="first" class="paragraphs">
+    Chores and Fulfillment is a website modelled on already existing 
+    freelance websites, such as Upwork, with one exception - 
+    CaF is focused on solving jobs within the physical world.
+</p>
+<a class="toClickOn" href="#">
+    <h3 onclick="myFunction('second')">What tasks can this service fulfill?</h3>
+</a>
+<p class="paragraphs" id="second">
+    Every registered user can "announce" pretty much 
+    any legal task they want to be fulfilled, 
+    including cleaning, washing, walking the dog, and so on. 
+</p>
+<a class="toClickOn" href="#">
+    <h3 onclick="myFunction('third')">
+        How does it all work?
+    </h3>
+</a>
+<p class="paragraphs" id="third">
+    After a task has been "announced", 
+    and registered within our system, 
+    its value is transfered to our escrow banking account.
+    Afterwards, anyone can submit an application to fulfill the task.
+    The task-filer looks at all the applicants, and picks the one 
+    they think is best qualified. It's that simple!
+</p>
+<a class="toClickOn" href="#">
+    <h3 onclick="myFunction('fourth')">
+        How is task-completion verified?
+    </h3>
+</a>
+<p class="paragraphs" id="fourth">
+    A task is marked as "verified" when 
+    both the task-filer and the task-fulfiller mark it as such.
+    Afterwards, the money from the escrow account is transferred 
+    to the task-fulfiller.
+</p>
+@*<a class="toClickOn" href="#">
+    <h3 onclick="myFunction('fifth')">
+    </h3>
+</a>
+<p class="paragraphs" id="fifth">
+</p>*@

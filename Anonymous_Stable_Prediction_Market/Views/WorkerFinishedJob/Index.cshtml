@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Finished Job";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h3>Job Details:</h3>
+<br />
+<form>
+    <ul class="list-group">
+        <li>
+            Job Name: @ViewData["name"]
+        </li>
+        <li>
+            Job Description: @ViewData["description"]
+        </li>
+        <li>
+            Job Creator: @ViewData["creator"]
+        </li>
+        <li>
+            Job Payment: @ViewData["payment"]
+        </li>
+        @Html.Raw(ViewData["giveRating"])
+        @Html.Raw(ViewData["error"])
+    </ul>
+</form>
