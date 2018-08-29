@@ -72,13 +72,22 @@ namespace ChoresAndFulfillment.Areas.Identity.Pages.Account
 
         }
 
-        public void OnGet(string returnUrl = null)
+        public IActionResult OnGet(string returnUrl = null)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return Redirect("/");
+            }
             ReturnUrl = returnUrl;
+            return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return Redirect("/");
+            }
             returnUrl = returnUrl ?? Url.Content("~/");
             if(Input.TypeOfAccount!= "WorkerAccount"&&Input.TypeOfAccount!= "EmployerAccount")
             {
