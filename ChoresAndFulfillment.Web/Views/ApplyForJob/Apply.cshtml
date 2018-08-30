@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Apply";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <h4>Apply for job.</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label>Job Name</label>
+                @ViewData["JobName"]
+            </div>
+            <div class="form-group">
+                <label>Number of applicants</label>
+                @ViewData["NumberOfApplicants"]
+            </div>
+            <div class="form-group">
+                <label>Job Application (Why you think you should be selected for the job, etc.)</label>
+                <textarea class="form-control" name="JobApplicationMessage"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Apply for Job</button>
+        </form>
+        <h2 style="color:red">@ViewData["Error"]</h2>
+        <h2>@ViewData["Success"]</h2>
+    </div>
+</div>
+

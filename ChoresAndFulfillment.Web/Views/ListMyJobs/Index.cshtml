@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "List my Jobs";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h3>Your active jobs:</h3>
+<br/>
+<ul class="list-group">
+    @Html.Raw(ViewData["Jobs"])
+</ul>
+

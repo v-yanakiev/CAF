@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Manage";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<br/>
+<div class="row">
+    <div class="col-sm-8">
+        <h3 style="margin:1px;">
+            All job applications:
+        </h3>
+        <ul>
+            @Html.Raw(ViewData["JobApplications"])
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <a class="btn btn-danger" href="../Delete/@ViewData["JobId"]">Delete Job (This action is irreversible.)</a>
+    </div>
+</div>
+
+

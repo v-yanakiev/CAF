@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChoresAndFulfillment", "Anonymous_Stable_Prediction_Market\ChoresAndFulfillment.csproj", "{99F525EF-309E-46BD-B252-50A924319D87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChoresAndFulfillment.Web", "ChoresAndFulfillment.Web\ChoresAndFulfillment.Web.csproj", "{99F525EF-309E-46BD-B252-50A924319D87}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChoresAndFulfillment.Data", "ChoresAndFulfillment.Data\ChoresAndFulfillment.Data.csproj", "{D4FBA920-E46E-4B1C-BF5C-7944BCEAECC1}"
 EndProject
