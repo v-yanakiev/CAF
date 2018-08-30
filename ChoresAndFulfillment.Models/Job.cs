@@ -20,6 +20,7 @@ namespace ChoresAndFulfillment.Models
         public int JobCreatorId { get; set; }
         public EmployerAccount JobCreator { get; set; }
         [Required]
+        [Range(1,25000)]
         public decimal PayUponCompletion { get; set; }
         public List<WorkerAccountApplication> Applicants { get; set; }
         public int? HiredUserId { get; set; }
