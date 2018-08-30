@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ChoresAndFulfillment.Data;
-using ChoresAndFulfillment.Data.Enums;
+using ChoresAndFulfillment.Models.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Controllers
 {
     public class WorkerFinishedJobController : Controller
     {
         private readonly UserManager<User> _userManager;
-        private readonly ApplicationDbContext _applicationDbContext;
-        public WorkerFinishedJobController(UserManager<User> userManager, ApplicationDbContext applicationDbContext)
+        private readonly CAFContext _applicationDbContext;
+        public WorkerFinishedJobController(UserManager<User> userManager, CAFContext applicationDbContext)
         {
             this._userManager = userManager;
             this._applicationDbContext = applicationDbContext;

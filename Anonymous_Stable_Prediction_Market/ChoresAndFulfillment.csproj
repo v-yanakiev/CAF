@@ -16,6 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ChoresAndFulfillment.Data\ChoresAndFulfillment.Data.csproj" />
+    <ProjectReference Include="..\ChoresAndFulfillment.Models\ChoresAndFulfillment.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Pages\Shared\_CookieConsentPartial.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

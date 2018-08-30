@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Routing;
 
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment
 {
     public class Startup
@@ -35,7 +36,7 @@ namespace ChoresAndFulfillment
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<CAFContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<User>(
@@ -49,7 +50,7 @@ namespace ChoresAndFulfillment
                     RequireUppercase=false
                 }
                 )
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<CAFContext>();
             
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

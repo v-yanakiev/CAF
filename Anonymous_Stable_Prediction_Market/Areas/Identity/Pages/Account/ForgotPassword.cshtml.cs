@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]

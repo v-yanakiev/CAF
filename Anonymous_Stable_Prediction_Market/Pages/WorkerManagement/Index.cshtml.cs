@@ -8,13 +8,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
+
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Pages.WorkerManagement
 {
     public class IndexModel : PageModel
     {
         private readonly UserManager<User> _userManager;
-        private readonly ApplicationDbContext _applicationDbContext;
-        public IndexModel(UserManager<User> userManager, ApplicationDbContext applicationDbContext)
+        private readonly CAFContext _applicationDbContext;
+        public IndexModel(UserManager<User> userManager, CAFContext applicationDbContext)
         {
             this._userManager = userManager;
             this._applicationDbContext = applicationDbContext;

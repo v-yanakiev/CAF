@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]

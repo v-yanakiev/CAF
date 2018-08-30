@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 
+
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Areas.Identity.Pages
 {
     [AllowAnonymous]

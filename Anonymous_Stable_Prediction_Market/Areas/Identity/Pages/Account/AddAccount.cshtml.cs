@@ -6,15 +6,15 @@ using ChoresAndFulfillment.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Areas.Identity.Pages.Account
 {
     public class AddAccountModel : PageModel
     {
         private UserManager<User> _userManager;
-        private ApplicationDbContext _applicationDbContext;
+        private CAFContext _applicationDbContext;
 
-        public AddAccountModel(UserManager<User> userManager, ApplicationDbContext applicationDbContext)
+        public AddAccountModel(UserManager<User> userManager, CAFContext applicationDbContext)
         {
             this._userManager = userManager;
             this._applicationDbContext = applicationDbContext;

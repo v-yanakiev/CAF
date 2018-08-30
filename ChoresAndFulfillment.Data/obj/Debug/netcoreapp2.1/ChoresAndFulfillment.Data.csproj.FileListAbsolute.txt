@@ -1,0 +1,14 @@
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.deps.json
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.runtimeconfig.json
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.runtimeconfig.dev.json
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.dll
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.pdb
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Models.dll
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\bin\Debug\netcoreapp2.1\ChoresAndFulfillment.Models.pdb
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.csprojAssemblyReference.cache
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.csproj.CoreCompileInputs.cache
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.AssemblyInfoInputs.cache
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.AssemblyInfo.cs
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.csproj.CopyComplete
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.dll
+C:\Users\Vasko\source\repos\Chores_And_Fulfillment\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.pdb

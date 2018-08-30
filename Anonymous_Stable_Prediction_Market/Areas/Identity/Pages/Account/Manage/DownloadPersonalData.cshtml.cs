@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Areas.Identity.Pages.Account.Manage
 {
     public class DownloadPersonalDataModel : PageModel

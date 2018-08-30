@@ -8,13 +8,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Controllers
 {
     public class ApplyForJobController : Controller
     {
         private readonly UserManager<User> _userManager;
-        private readonly ApplicationDbContext _applicationDbContext;
-        public ApplyForJobController(UserManager<User> userManager, ApplicationDbContext applicationDbContext)
+        private readonly CAFContext _applicationDbContext;
+        public ApplyForJobController(UserManager<User> userManager, CAFContext applicationDbContext)
         {
             this._userManager = userManager;
             this._applicationDbContext = applicationDbContext;

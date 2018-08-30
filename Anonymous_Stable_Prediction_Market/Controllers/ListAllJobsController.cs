@@ -4,19 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ChoresAndFulfillment.Data;
-using ChoresAndFulfillment.Data.Enums;
+using ChoresAndFulfillment.Models.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using ChoresAndFulfillment.Models;
 namespace ChoresAndFulfillment.Controllers
 {
     public class ListAllJobsController : Controller
     {
-        private ApplicationDbContext applicationDbContext;
+        private CAFContext applicationDbContext;
         private UserManager<User> userManager;
         public ListAllJobsController(
-            ApplicationDbContext applicationDbContext, 
+            CAFContext applicationDbContext, 
             UserManager<User> userManager)
         {
             this.applicationDbContext = applicationDbContext;
