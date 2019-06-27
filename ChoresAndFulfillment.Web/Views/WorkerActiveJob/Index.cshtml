@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Job";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@model  ChoresAndFulfillment.Web.Data.ViewModels.WorkerActiveJobViewModel
+<h3>Job Details:</h3>
+<br />
+<ul class="list-group">
+    <li>
+        Job Name: @Model.JobName
+    </li>
+    <li>
+        Job Description: @Model.JobDescription
+    </li>
+    <li>
+        Job Creator: @Model.JobCreator
+    </li>
+    <li>
+        Job Payment: @Model.PayUponCompletion
+    </li>
+    @if (Model.WorkerConfirmedFinished)
+    {
+        <li><p style="color:darkgreen">Job marked as finished, awaiting employer confirmation...</p></li>
+    }
+    else
+    {
+        <li style="list-style:none">
+            <a class="btn btn-warning" href="/WorkerActiveJob/MarkAsFinished/@Model.JobId">
+                Mark job as finished,
+                and confirm that you have received payment
+            </a>
+        </li>
+        <li style="list-style:none">
+            Notice: The job will be marked as finished only
+            when both you and the employer
+            have confirmed it as being so.
+        </li>
+    }
+</ul>

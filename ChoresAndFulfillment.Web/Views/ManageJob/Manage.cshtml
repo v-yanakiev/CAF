@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "Manage";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@using ChoresAndFulfillment.Web.Data.ViewModels
+@model ManageJobViewModel
+<br />
+@if (Model.AnyApplications)
+{
+<div class="row">
+    <div class="col-sm-8">
+
+        @if (Model.AcceptedAnyone)
+        {
+            <h3 style="margin:1px;">
+                Accepted application:
+            </h3>
+            <br />
+            <ul>
+                <li>
+                    Username:
+                    @Model.AcceptedApplication.WorkerAccount.User.UserName
+                </li>
+                <li>
+                    Telephone Number:
+                    @Model.AcceptedApplication.WorkerAccount.User.PhoneNumber
+                </li>
+                <li>
+                    Job Application:
+                    @Model.AcceptedApplication.ApplicationMessage
+                </li>
+                <li style="color:darkgreen">Application Accepted</li>
+
+                @if (Model.Job.EmployerConfirmedFinished)
+                {
+                    <li style="list-style:none;color:darkgreen">
+                        Job marked as finished. Awaiting worker confirmation...
+                    </li>
+                }
+                else
+                {
+                    <li style="list-style:none">
+                        <a id="markJobAsFinished" class="btn btn-warning" href="/ManageJob/MarkAsFinished/" +job.Id+"">
+                            Mark job as finished by the worker applicant,
+                            and confirm that payment has been received by the worker
+                        </a>
+                    </li>
+                    <li style="list-style:none">
+                        Notice: The job will be marked as finished only
+                        when both you and the worker applicant
+                        have confirmed it as being so.
+                    </li>
+                }
+            </ul>
+        }
+
+        else
+        {
+            <h3 style="margin:1px;">
+                Applications:
+            </h3>
+            <br />
+            <ul>
+                @foreach (var jobApplication in Model.PendingApplications)
+                {
+                    <li>
+                        <ul>
+                            <li>
+                                Username:
+                                @jobApplication.WorkerAccount.User.UserName
+                            </li>
+
+                            <li>
+                                Telephone Number:
+                                @jobApplication.WorkerAccount.User.PhoneNumber
+                            </li>
+
+                            <li>
+                                Job Application:
+                                @jobApplication.ApplicationMessage
+                            </li>
+                            <li>
+                                <a href="/ManageJob/AcceptApplicationFrom?jobId=@jobApplication.JobId&workerAccountId=@jobApplication.WorkerAccountId">Accept Application</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                }
+            </ul>
+        }
+
+    </div>
+    <div class="col-sm-4">
+        <a class="btn btn-danger" href="../Delete/@Model.Job.Id">Delete Job (This action is irreversible.)</a>
+    </div>
+</div>
+
+}
+else
+{
+    <h4>No one has applied for your job yet!</h4>
+}
+
+
+

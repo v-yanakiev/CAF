@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Your Applications";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@using ChoresAndFulfillment.Models.Enums
+@model ChoresAndFulfillment.Web.Data.ViewModels.YourApplicationsViewModel
+@functions{
+    string ParseApplicationState(ApplicationState applicationState)
+        {
+            if (applicationState == ApplicationState.Deleted)
+            {
+                return "Job has been deleted.";
+            }
+            else
+            {
+                return applicationState.ToString();
+            }
+        }
+}
+@if (Model.AnyActiveApplications)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name of job</th>
+                <th scope="col">Description</th>
+                <th scope="col">Payment</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var application in Model.ActiveApplications)
+            {
+                <tr>
+                    <td>@application.Job.Name</td>
+                    <td>@application.Job.Description</td>
+                    <td>@application.Job.PayUponCompletion</td>
+                    <td>@application.ApplicationState.ToString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h2>You haven't made any applications yet!</h2>
+}
+<table>
+    @Html.Raw(ViewData["applications"])
+</table>
+

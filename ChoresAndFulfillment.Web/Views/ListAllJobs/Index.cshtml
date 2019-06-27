@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "All Jobs";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@using ChoresAndFulfillment.Web.Data.ViewModels
+@model ListAllJobsViewModel
+@if (Model.AnyJobs)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Job Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Job Creator</th>
+                <th scope="col">Employer Rating</th>
+                <th scope="col">Payment</th>
+                @if (Model.IsWorker)
+                {
+                    <th scope="col">Apply for Job</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Model.ActiveJobs)
+            {
+                <tr>
+                    <td>@job.Name</td>
+                    <td>@job.Description</td>
+                    <td>@job.JobCreatorName</td>
+                    @if (job.JobCreatorRating != null)
+                    {
+                        <td>@job.JobCreatorRating</td>
+                    }
+                    else
+                    {
+                        <td>N/A</td>
+                    }
+                    <td>@job.PayUponCompletion</td>
+                    @if (Model.IsWorker)
+                    {
+                        @if (job.CurrentUserAppliedForJob)
+                        {
+                            <td>Already applied.</td>
+                        }
+                        else
+                        {
+                            <td><a href="/ApplyForJob/Apply/@job.Id">Apply For Job</a></td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (Model.CurrentPage <= 1)
+    {
+        <a href="#" class="btn btn-secondary float-left" style="color:black;">Previous Page</a>
+    }
+    else
+    {
+        <a href="/ListAllJobs?page=@(Model.CurrentPage-1)" class="btn btn-secondary float-left" style="color:black;">Previous Page</a>
+    }
+    if (Model.PageIsLast)
+    {
+        <a href="#" class="btn btn-secondary float-right" style="color:black;">Next Page</a>
+    }
+    else
+    {
+        <a href="/ListAllJobs?page=@(Model.CurrentPage+1)" class="btn btn-secondary float-right" style="color:black;">Next Page</a>
+    }
+}
+else
+{
+    <h1 style="text-align:center;">No jobs found!</h1>
+}

@@ -1,0 +1,24 @@
+﻿@page
+@model ChoresAndFulfillment.Pages.WorkerManagement.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+<h3>Hello, @HttpContext.User.Identity.Name. Here is what you can do from here:</h3>
+<ul>
+    <li>
+        <a href="/ListAllJobs/Index">Apply for a job</a>
+    </li>
+    <li>
+        <a href="/YourApplications/Index">Look through all your job applications</a>
+    </li>
+    <li>
+        <a href="/ListWorkerJobs/Index">All your active jobs</a>
+    </li>
+    @*<li>
+        <a href="WorkerCompletedJobs/Index">
+        See all your completed jobs, 
+        and give a rating to your previous employers</a>
+    </li>*@
+</ul>
+
+

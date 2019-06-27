@@ -1,0 +1,31 @@
+﻿@page
+@model ChoresAndFulfillment.Web.Pages.EmployerFinish.IndexModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<br/>
+<div class="row">
+    <div class="col-md-5">
+        <section>
+            <form method="get" action="/EmployerFinish/Finish">
+                <div class="form-group">
+                    <label>How would you rate the performance of the worker?</label>
+                    <select class="form-control" name="Rating">
+                        <option selected disabled hidden>Give a rating...</option>
+                        <option value="1">1 - Very Bad</option>
+                        <option value="2">2 - Bad</option>
+                        <option value="3">3 - Mediocre</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                    <br/>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+                <input type="hidden" name="JobId" value="@ViewData["JobId"]"/>
+            </form>
+        </section>
+    </div>
+</div>
+
+

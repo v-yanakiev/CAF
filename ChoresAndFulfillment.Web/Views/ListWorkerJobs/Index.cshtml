@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "List my Jobs";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@using ChoresAndFulfillment.Web.Data.ViewModels
+@model ListWorkerJobsViewModel
+@if (Model.AnyActiveJobs)
+{
+    <h3>Your active jobs:</h3>
+    <br />
+    <ul class="list-group">
+        @foreach (var job in Model.ActiveJobs)
+        {
+        <li>
+            <a href="/WorkerActiveJob/Index/@job.Id">@job.Name</a>
+        </li>
+        }
+    </ul>
+}
+else
+{
+    <h2>You have no active jobs!</h2>
+}
+
