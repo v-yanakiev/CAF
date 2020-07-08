@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using ChoresAndFulfillment.Models;
+
 namespace ChoresAndFulfillment.Data
 {
     public class CAFContext : IdentityDbContext<User>

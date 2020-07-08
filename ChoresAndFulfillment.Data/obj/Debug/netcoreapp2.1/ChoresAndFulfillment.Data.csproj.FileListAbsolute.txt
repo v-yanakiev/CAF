@@ -26,3 +26,4 @@ C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Debug\netco
 C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.csproj.CopyComplete
 C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.dll
 C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.pdb
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Debug\netcoreapp2.1\ChoresAndFulfillment.Data.genruntimeconfig.cache
