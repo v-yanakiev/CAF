@@ -19,7 +19,7 @@ The task-filer looks at all the applicants, and picks the one
 they think is best qualified. It's that simple!
 
 ## How is task-completion verified?
-Every registered user can "announce" pretty much
+Every registered user with an Employer Account can "announce" pretty much
 any legal task they want to be fulfilled,
 including cleaning, washing, walking the dog, and so on.
 
