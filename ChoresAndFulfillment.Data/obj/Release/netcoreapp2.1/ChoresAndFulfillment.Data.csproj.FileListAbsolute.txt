@@ -1,0 +1,15 @@
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Data.deps.json
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Data.runtimeconfig.json
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Data.runtimeconfig.dev.json
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Data.dll
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Data.pdb
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Models.dll
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\bin\Release\netcoreapp2.1\ChoresAndFulfillment.Models.pdb
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.csprojAssemblyReference.cache
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.csproj.CoreCompileInputs.cache
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.AssemblyInfoInputs.cache
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.AssemblyInfo.cs
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.csproj.CopyComplete
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.dll
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.pdb
+C:\Users\vasko\source\repos\CAF-master\ChoresAndFulfillment.Data\obj\Release\netcoreapp2.1\ChoresAndFulfillment.Data.genruntimeconfig.cache

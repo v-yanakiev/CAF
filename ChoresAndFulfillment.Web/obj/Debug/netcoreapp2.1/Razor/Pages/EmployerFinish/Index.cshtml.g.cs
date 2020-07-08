@@ -79,12 +79,12 @@ using ChoresAndFulfillment.Models;
             WriteLiteral("<br/>\n<div class=\"row\">\n    <div class=\"col-md-5\">\n        <section>\n            ");
             EndContext();
             BeginContext(235, 896, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33b582f88acd42459030ad316e168c18", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d634c06aaa864252905255a7b0fb6d60", async() => {
                 BeginContext(286, 215, true);
                 WriteLiteral("\n                <div class=\"form-group\">\n                    <label>How would you rate the performance of the worker?</label>\n                    <select class=\"form-control\" name=\"Rating\">\n                        ");
                 EndContext();
                 BeginContext(501, 58, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86cdbb036c8b44eeaa9ccc1c5d72bd41", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e80b8780fe14237acfe7fe03bdc5565", async() => {
                     BeginContext(534, 16, true);
                     WriteLiteral("Give a rating...");
                     EndContext();
@@ -113,7 +113,7 @@ using ChoresAndFulfillment.Models;
                 WriteLiteral("\n                        ");
                 EndContext();
                 BeginContext(584, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be5068db3401422287916eefa3aaee67", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5bd16ddd1cd245189cbab2a58011b09e", async() => {
                     BeginContext(602, 12, true);
                     WriteLiteral("1 - Very Bad");
                     EndContext();
@@ -135,7 +135,7 @@ using ChoresAndFulfillment.Models;
                 WriteLiteral("\n                        ");
                 EndContext();
                 BeginContext(648, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1207b2abd3f5444cb361bd09df805b14", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d962631040d48cfbe1869c9236f571f", async() => {
                     BeginContext(666, 7, true);
                     WriteLiteral("2 - Bad");
                     EndContext();
@@ -157,7 +157,7 @@ using ChoresAndFulfillment.Models;
                 WriteLiteral("\n                        ");
                 EndContext();
                 BeginContext(707, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "69ae5bee8aa1498a8ca2d9922fd38362", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbc781cf795141c8bf146290706421d1", async() => {
                     BeginContext(725, 12, true);
                     WriteLiteral("3 - Mediocre");
                     EndContext();
@@ -179,7 +179,7 @@ using ChoresAndFulfillment.Models;
                 WriteLiteral("\n                        ");
                 EndContext();
                 BeginContext(771, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cef5f50d9364d45ad29fdea850ce872", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2c999bec5d4402da1514195dc2c00c1", async() => {
                     BeginContext(789, 8, true);
                     WriteLiteral("4 - Good");
                     EndContext();
@@ -201,7 +201,7 @@ using ChoresAndFulfillment.Models;
                 WriteLiteral("\n                        ");
                 EndContext();
                 BeginContext(831, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f9158aa4c7a4d35a8f261179ce3b604", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b819fd32a103407d9dca8d7e009725c3", async() => {
                     BeginContext(849, 13, true);
                     WriteLiteral("5 - Excellent");
                     EndContext();
